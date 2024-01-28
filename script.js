@@ -1,3 +1,6 @@
+const currentDate = dayjs();
+const currentDay = currentDate.format("D/MM/YYYY");
+console.log(currentDay);
 $(".search-button").on("click", function (event) {
   event.preventDefault();
   const cityName = $("#search-input").val().trim();
@@ -7,11 +10,6 @@ $(".search-button").on("click", function (event) {
     cityName +
     "&appid=" +
     api;
-  var todayCity = "";
-  var todayIcon = "";
-  var todayTemp = "";
-  var todayWind = "";
-  var TodayHumidity = "";
 
   fetch(queryURL)
     .then((response) => {
@@ -28,7 +26,7 @@ $(".search-button").on("click", function (event) {
           "@2x.png"
       );
       var todayTemp = $("<p>").text(
-        "Temperature: " + (data.list[0].main.temp - 273.15) + "°C"
+        "Temperature: " + (data.list[0].main.temp - 273.15).toFixed(0) + "°C"
       );
       var todayWind = $("<p>").text("Wind: " + data.list[0].wind.speed + "KPH");
       var TodayHumidity = $("<p>").text(
