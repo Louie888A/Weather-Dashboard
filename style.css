@@ -1,21 +1,63 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  color: #1a1a1a;
 }
+
 body {
-  background: #e3f2fd;
-}
-h1 {
-  text-align: center;
-  background-color: rgb(42, 42, 116);
-  color: #fff;
-  padding: 40px;
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 0px;
-  height: 20vh;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
+.weather-header {
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(28, 52, 151) 0%,
+    rgb(1, 1, 23) 100.2%
+  ) !important;
+}
 
+.search-button {
+  width: 100%;
+  background-color: #0fbbfa !important;
+}
+
+.cityHistory {
+  background-color: rgb(171, 168, 168) !important;
+}
+
+.custom-card {
+  background-color: #06061f !important;
+  color: #ffffff;
+}
+
+.forecast-card {
+  padding: 2px !important;
+}
+
+#search-button {
+  width: 100%;
+  background-color: #0fbbfa !important;
+  color: #ffffff;
+}
+#search-input {
+  width: 100%;
+  padding: 5px;
+  color: #ffffff;
+}
+#history button {
+  background-color: gray;
+}
