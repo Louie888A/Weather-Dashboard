@@ -7,7 +7,6 @@ let queryURL;
 let searchBtn = $("#search-button");
 let todayWeather = $("#today");
 let weatherForecast = $("#forecast");
-
 let cityName;
 let cityBtn;
 
@@ -36,8 +35,6 @@ function getUserInput() {
 
     // Fetch weather data for the selected city
     fetchData();
-
-    // Clear the input field
     $("#search-input").val("");
 
     // Add city to the array and update UI only if it's not a duplicate
@@ -50,14 +47,12 @@ function getUserInput() {
 
 // Function to render user's search history
 function renderInput() {
-  // Clear the search history container
   $("#history").empty();
   // Iterate through the cities array and create buttons
   for (let i = 0; i < citiesArray.length; i++) {
     cityBtn = $("<button>");
     cityBtn.text(citiesArray[i]);
     cityBtn.addClass("list-group-item mb-2 cityHistory");
-    // Append buttons to the search history container
     $("#history").append(cityBtn);
 
     // Event listener for city button click
@@ -164,7 +159,7 @@ function fetchData() {
       let cardCount = 0; // Counter variable
 
       const forecastText = $("<h4>").text("5-Day Forecast:");
-      forecastText.addClass("text-left");
+      forecastText.addClass("text-left forecastText");
       weatherForecast.append(forecastText);
 
       for (const date in dailyForecast) {

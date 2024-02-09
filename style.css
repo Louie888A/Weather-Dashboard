@@ -40,8 +40,7 @@ body {
 .forecast-card {
   margin: 10px !important;
   padding: 2px !important;
-  width: 100%
-
+  width: 100%;
 }
 
 #search-button {
@@ -54,4 +53,6 @@ body {
   padding: 5px;
   color: #ffffff;
 }
-
+.forecastText {
+  font-weight: 700;
+}

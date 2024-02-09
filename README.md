@@ -21,8 +21,20 @@ The city today weather & 5 days forecast will appear in the right side
 User search history will appear in the left bottom side
 User can click search history city to check the weather again
 
-## Mock-Up
+## Screenshot
+
+![Start page](Screenshot/1.jpg)
+![Result page](Screenshot/2.jpg)
+
+## Built with
+- HTML
+- CSS
+- Java Script
+- Day.js
+- Bootstrap
+
+## Setup
+Please clone repo at: [git@github.com:Louie888A/Weather-Dashboard.git]
 
 ## License
-
 [MIT](LICENSE)
