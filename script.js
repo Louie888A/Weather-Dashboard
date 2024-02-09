@@ -163,8 +163,8 @@ function fetchData() {
       // Create a card container
       let cardCount = 0; // Counter variable
 
-      const forecastText = $("<h4>").text("5-day forecast:");
-      forecastText.addClass("text-center");
+      const forecastText = $("<h4>").text("5-Day Forecast:");
+      forecastText.addClass("text-left");
       weatherForecast.append(forecastText);
 
       for (const date in dailyForecast) {
@@ -178,7 +178,7 @@ function fetchData() {
         }
         const dailyData = dailyForecast[date];
         const cardMain = $("<div>");
-        cardMain.addClass("cardMain col-lg-2 col-md-4 col-sm-9 mb-3");
+        cardMain.addClass("cardMain col-lg col-md-4 col-sm-6 mb-3");
 
         const cardContainer = $("<div>");
         cardContainer.addClass("card align-items-center shadow custom-card");
@@ -187,7 +187,7 @@ function fetchData() {
         const cardBody = $("<div>");
         cardBody.addClass("card-body forecast-card");
 
-        let forecastTitle = $("<h6>");
+        let forecastTitle = $("<h5>");
         forecastTitle.addClass("card-title");
 
         let dateForecast = dailyData.dt_txt;

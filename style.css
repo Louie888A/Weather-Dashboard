@@ -1,14 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html,
 body {
   min-height: 100%;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -40,12 +33,15 @@ body {
 }
 
 .custom-card {
-  background-color: #06061f !important;
+  background-color: rgb(61, 61, 64) !important;
   color: #ffffff;
 }
 
 .forecast-card {
+  margin: 10px !important;
   padding: 2px !important;
+  width: 100%
+
 }
 
 #search-button {
@@ -58,6 +54,4 @@ body {
   padding: 5px;
   color: #ffffff;
 }
-#history button {
-  background-color: gray;
-}
+
